@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eledion <eledion@student.42.fr>            +#+  +:+       +#+        */
+/*   By: danoguer <danoguer@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/27 10:12:50 by eledion           #+#    #+#             */
-/*   Updated: 2025/11/27 10:36:23 by eledion          ###   ########.fr       */
+/*   Updated: 2025/12/02 11:43:51 by danoguer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,12 @@
 int main()
 {
     std::cout << "--- 1. CREATION ---" << std::endl;
-    ScavTrap robot("Guardian"); // Should print ClapTrap born -> ScavTrap born
+    ScavTrap robot("Guardian");
 
     std::cout << "\n--- 2. ACTION ---" << std::endl;
-    robot.attack("Intruder"); // Should print "ScavTrap attacks..." (20 damage)
-    robot.guardGate();        // Should print "Gate keeper mode"
+    robot.attack("Intruder");
+    robot.guardGate();
 
     std::cout << "\n--- 3. DESTRUCTION ---" << std::endl;
-    // Should print ScavTrap die -> ClapTrap die
     return 0;
 }
