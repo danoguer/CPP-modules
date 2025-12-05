@@ -6,7 +6,7 @@
 /*   By: danoguer <danoguer@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/25 12:42:35 by eledion           #+#    #+#             */
-/*   Updated: 2025/12/02 11:42:21 by danoguer         ###   ########.fr       */
+/*   Updated: 2025/12/05 12:00:32 by danoguer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,8 @@ void Harl::error(void)
 
 void Harl::complain( std::string level )
 {
-    void (Harl::*ptr[])(void) = {
+    void (Harl::*ptr[])(void) = 
+    {
         &Harl::debug,
         &Harl::info,
         &Harl::warning,
