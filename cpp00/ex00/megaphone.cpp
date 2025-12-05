@@ -6,7 +6,7 @@
 /*   By: danoguer <danoguer@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/24 13:07:34 by eledion           #+#    #+#             */
-/*   Updated: 2025/12/02 11:38:24 by danoguer         ###   ########.fr       */
+/*   Updated: 2025/12/05 10:03:08 by danoguer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 int main(int argc, char **argv)
 {
     if (argc == 1)
-        std::cout << "Error: No arguments." << std::endl;
+        std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *" << std::endl;
     else
     {
         for (int i = 1; i < argc; i++)

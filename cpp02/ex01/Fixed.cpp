@@ -6,7 +6,7 @@
 /*   By: danoguer <danoguer@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/26 10:01:55 by eledion           #+#    #+#             */
-/*   Updated: 2025/12/02 11:42:49 by danoguer         ###   ########.fr       */
+/*   Updated: 2025/12/05 10:19:36 by danoguer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,6 @@ void Fixed::setRawBits( int const raw )
     this->_fixedPointValue = raw;
 }
 
-//Used to change Fixed to Float and send it to cout.
 std::ostream &operator<<(std::ostream &o, Fixed const &i)
 {
     o << i.toFloat();
