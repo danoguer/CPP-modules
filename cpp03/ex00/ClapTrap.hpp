@@ -6,7 +6,7 @@
 /*   By: danoguer <danoguer@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/27 09:36:43 by eledion           #+#    #+#             */
-/*   Updated: 2025/12/02 11:43:25 by danoguer         ###   ########.fr       */
+/*   Updated: 2025/12/05 10:22:41 by danoguer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ public:
     void takeDamage(unsigned int amount);
     void beRepaired(unsigned int amount);
     
-private:
+protected:
     std::string _name;
     int _hitPoints;
     int _energyPoints;
