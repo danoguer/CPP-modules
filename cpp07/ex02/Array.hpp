@@ -42,6 +42,14 @@ public:
         }
         return _elements[index];
     }
+
+    const T &operator[](size_t index) const {
+        if (index >= _size) {
+            throw std::out_of_range("Index out of bounds");
+        }
+        return _elements[index];
+    }
+
     size_t size() const { return _size; }
 };
 

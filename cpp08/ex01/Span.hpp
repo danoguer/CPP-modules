@@ -18,6 +18,17 @@ public:
     void addNumber(int number);
     int shortestSpan() const;
     int longestSpan() const;
+
+    template <typename InputIterator>
+    void addRange(InputIterator begin, InputIterator end) {
+        while (begin != end) {
+            if (numbers.size() >= maxSize) {
+                throw std::out_of_range("Span is full");
+            }
+            numbers.push_back(*begin);
+            ++begin;
+        }
+    }
 };
 
 #endif

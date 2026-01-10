@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 #include "Span.hpp"
 
 int main()
@@ -46,6 +47,19 @@ int main()
         }
         std::cout << "Shortest span: " << sp.shortestSpan() << std::endl;  // Should be 2
         std::cout << "Longest span: " << sp.longestSpan() << std::endl;    // 19998 - 0 = 19998
+    }
+
+    std::cout << "\n=== Test 5: Using addRange with iterators ===" << std::endl;
+    {
+        std::vector<int> vec;
+        for (int i = 0; i < 10000; i++) {
+            vec.push_back(i);
+        }
+        Span sp(10000);
+        sp.addRange(vec.begin(), vec.end());
+        std::cout << "Added 10000 numbers using addRange" << std::endl;
+        std::cout << "Shortest span: " << sp.shortestSpan() << std::endl;  // Should be 1
+        std::cout << "Longest span: " << sp.longestSpan() << std::endl;    // 9999 - 0 = 9999
     }
 
     return 0;
